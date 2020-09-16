@@ -19,6 +19,7 @@ import RiggingWorks from './components/Boxes/RiggingWorks';
 import Prices from './components/Header/HeaderMiddle/Menu/Prices';
 import Calculator from './components/Header/HeaderMiddle/Menu/Calculator';
 import Contacts from './components/Header/HeaderMiddle/Menu/Contacts';
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -41,6 +42,7 @@ const App = () => {
         <IconsService />
         <AboutUs /> 
         <Reviews />
+        <Footer />
       </Fragment>
     </Router>
   );
