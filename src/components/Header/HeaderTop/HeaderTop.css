@@ -1,0 +1,38 @@
+@import '../../../styles/variables.css';
+
+.blackLine {
+  display: flex;
+  justify-content: center; 
+  background-color: var(--black); 
+  height: 75px; 
+  
+}
+
+.forText {
+  color:var(--white);
+  font-size: 27px;
+}
+
+@media (max-width: 760px) {
+  .blackLine {
+    height: 55px;
+  }
+
+  .forText {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 320px) {
+  .blackLine {
+    height: 50px;
+  }
+
+  .forText {
+    font-size: 16px;
+  }
+
+}
+
+
+

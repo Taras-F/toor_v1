@@ -1,0 +1,96 @@
+.section {
+    box-sizing: border-box;
+    max-width: 1920px;
+    display: flex;
+    justify-content: center;
+}
+
+.wrap {
+    width: 1170px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 32px;
+    font-family: FontAwesome;
+    color: var(--blue);
+    text-align: center;
+}
+
+.wrapItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.wrapItemUser {
+    width: 350px;
+    margin: 0px 10px 20px 10px;
+    padding-top: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.itemText{
+    height: 135px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black);
+    font-family: var(--textStyle);
+}
+
+.user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.user a{
+    text-decoration: none;
+    color: var(--black);
+    text-transform: uppercase;
+    font-family: var(--textStyle);
+    font-weight: 600;  
+    font-size: 14px;
+}
+
+
+.ava img{
+    width: 60px;
+    border-radius: 50px;
+  
+}
+
+.nameUser{
+    margin-left: 10px;
+}
+
+.btn {
+    width: 100px;
+    height: 50px;
+    background-color:var(--blue);
+    border-radius: 15px;
+    color: var(--white);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    cursor: pointer;
+}
+
+@media(max-width: 370px){
+    .wrapItemUser {
+        width: 300px;
+    }
+    .itemText{
+        height: auto;
+    }
+}
+
+
