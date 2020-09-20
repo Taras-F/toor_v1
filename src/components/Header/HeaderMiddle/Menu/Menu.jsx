@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import style from './Menu.module.css';
-/* import Lang from '../Lang/Lang'; */
 import Burger from 'react-css-burger';
 import { Link } from "react-router-dom";
 
