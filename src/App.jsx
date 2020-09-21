@@ -3,7 +3,7 @@ import './index.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
+  Route, Redirect,
 } from "react-router-dom";
 import OfficeRelocation from './components/Boxes/OfficeRelocation';
 import HeaderTop from './components/Header/HeaderTop/HeaderTop';
@@ -20,16 +20,17 @@ import Prices from './components/Header/HeaderMiddle/Menu/Prices';
 import Calculator from './components/Header/HeaderMiddle/Menu/Calculator';
 import Contacts from './components/Header/HeaderMiddle/Menu/Contacts';
 import Footer from "./components/Footer/Footer";
+import Main from "./components/Main/Main";
 
 const App = () => {
   return (
     <Router>
       <Fragment>
         <HeaderTop />
-        <HeaderMiddle /> 
-        {/* <HeaderBottom /> */} 
+        <HeaderMiddle />
         <Switch>
-          <Route exact path='/' component={HeaderBottom} />
+          <Route exact path='/' render={() => <Redirect to={"/main"}/>}/>
+          <Route exact path='/main' component={Main}/>
           <Route path='/apartmentMove' component={ApartmentMove} />
           <Route path="/officeRelocation" component={OfficeRelocation} />
           <Route path="/buildingMaterials" component={BuildingMaterials} />
@@ -38,10 +39,6 @@ const App = () => {
           <Route path='/prices' component={Prices} />
           <Route path='/contacts' component={Contacts} />
         </Switch>
-        <MenuService />
-        <IconsService />
-        <AboutUs /> 
-        <Reviews />
         <Footer />
       </Fragment>
     </Router>

@@ -1,10 +1,12 @@
 import React from 'react';
 import './forBoxes.css';
+import MenuService from "../Main/MenuService/MenuService";
 
 
 
 const ApartmentMove = () => {
   return(
+      <>
     <div className='container' > 
       <div className='styleForContainer'>
        
@@ -53,6 +55,8 @@ const ApartmentMove = () => {
       </p>
       </div>
     </div>
+        <MenuService />
+        </>
   )
 }
 

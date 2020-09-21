@@ -1,9 +1,11 @@
 import React from 'react';
 import './forBoxes.css';
 import imgForOR from '../../images/gallery6.jpg';
+import MenuService from "../Main/MenuService/MenuService";
 
 const OfficeRelocation = () => {
   return(
+      <>
     <div className='container' >
       <div className='styleForContainer'>
         <img src={imgForOR} alt="img" className='heightAndWidth' />
@@ -51,6 +53,8 @@ const OfficeRelocation = () => {
         </p>
       </div>
     </div>
+        <MenuService />
+      </>
   )
 }
 
