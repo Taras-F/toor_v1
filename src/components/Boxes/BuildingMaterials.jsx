@@ -1,9 +1,11 @@
 import React from 'react';
 import './forBoxes.css';
+import MenuService from "../Main/MenuService/MenuService";
 
 
 const BuildingMaterials = () => {
   return(
+      <>
     <div className='container'>
       <div className='styleForContainer'>
         <div id="headerBuldingMaterials">
@@ -11,7 +13,7 @@ const BuildingMaterials = () => {
         </div>
         
         <p>
-          Коли Ви плануєте будь-які будівельні чи ремонтні роботи виникає питання: 
+          Коли Ви плануєте будь-які будівельні чи ремонтні роботи виникає питання:
           «Як привезти і винести матеріал на поверх…?» У вирішені цього питання Ви можете сміло звернутися до нас.
           Ми забезпечимо доставку  будівельних матеріалів будь-якого тоннажу.
           Наш підхід до завантаження та транспортування будівельних матеріалів націлений на збереження їх початкових якостей і цілісності.
@@ -31,6 +33,8 @@ const BuildingMaterials = () => {
         </p>
       </div>
     </div>
+        <MenuService />
+      </>
   )
 }
 

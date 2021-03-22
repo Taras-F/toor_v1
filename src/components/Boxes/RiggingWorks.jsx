@@ -1,9 +1,11 @@
 import React from 'react';
 import './forBoxes.css';
+import MenuService from "../Main/MenuService/MenuService";
 
 
 const RiggingWorks = () => {
   return(
+      <>
     <div className='container'>
       <div className='styleForContainer'>
         <div id="headerRiggingWorks">
@@ -23,6 +25,8 @@ const RiggingWorks = () => {
         
       </div>
     </div>
+        <MenuService />
+        </>
   )
 }
 
