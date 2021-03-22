@@ -1,6 +1,5 @@
 import React from 'react';
 import '../Menu/styleForPrices.css';
-import { Link } from "react-router-dom";
 import { useHistory } from 'react-router-dom';
 import ScrollIntoView from 'react-scroll-into-view';
 
