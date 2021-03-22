@@ -56,20 +56,12 @@ const ApartmentMove = () => {
           Вам достатньо зателефонувати і узгодити, зручний для Вас, час приїзду, у нашого спеціаліста. Телефонна консультація, під час якої 
           Ви отримаєте максимальну інформацію про наші послуги та умови співробітництва – безкоштовна.
       </p>
-      {/* <ScrollIntoView selector="#header">
-        <button className="mdl-button mdl-js-button mdl-button--raised">jump to header</button>
-      </ScrollIntoView> */}
+      
       </div>
     </div>
         <MenuService />
         </>
-  )
-    
-  
-}
-const hiddenElement = document.querySelector('.hiddenElement');
-//hiddenElement.scrollIntoView({block: "center", behavior: "smooth"});
-console.log(hiddenElement);
-
+  );
+};
 
 export default ApartmentMove;

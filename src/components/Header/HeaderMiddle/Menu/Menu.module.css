@@ -20,6 +20,7 @@
     border: 1px solid transparent;
     padding: 5px 16px;
     transition: all .3s;
+    cursor: pointer;
 }
 
 .nav .xuy:hover {
