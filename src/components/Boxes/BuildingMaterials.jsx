@@ -6,6 +6,10 @@ const BuildingMaterials = () => {
   return(
     <div className='container'>
       <div className='styleForContainer'>
+        <div id="headerBuldingMaterials">
+          <h4>Доставка будматеріалів</h4>
+        </div>
+        
         <p>
           Коли Ви плануєте будь-які будівельні чи ремонтні роботи виникає питання: 
           «Як привезти і винести матеріал на поверх…?» У вирішені цього питання Ви можете сміло звернутися до нас.

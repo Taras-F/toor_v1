@@ -8,7 +8,10 @@ const ApartmentMove = () => {
     <div className='container' > 
       <div className='styleForContainer'>
        
-          <h4>Питання квартирного переїзду ніколи не втрачає актуальності.</h4>
+       <div id="headerApartmentMove">
+         <h4>Питання квартирного переїзду ніколи не втрачає актуальності.</h4>
+       </div>
+         
         <p>  
           Люди починають або завершують відносини, 
           змінюють місце роботи, діти виростають і бажають жити окремо — за усім цим постає необхідність квартирного переїзду.
@@ -51,9 +54,18 @@ const ApartmentMove = () => {
           Вам достатньо зателефонувати і узгодити, зручний для Вас, час приїзду, у нашого спеціаліста. Телефонна консультація, під час якої 
           Ви отримаєте максимальну інформацію про наші послуги та умови співробітництва – безкоштовна.
       </p>
+      {/* <ScrollIntoView selector="#header">
+        <button className="mdl-button mdl-js-button mdl-button--raised">jump to header</button>
+      </ScrollIntoView> */}
       </div>
     </div>
   )
+    
+  
 }
+const hiddenElement = document.querySelector('.hiddenElement');
+//hiddenElement.scrollIntoView({block: "center", behavior: "smooth"});
+console.log(hiddenElement);
+
 
 export default ApartmentMove;

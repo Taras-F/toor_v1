@@ -74,6 +74,7 @@ class Calculator extends React.Component  {
     return(
       <div className='container'>
         <div className='page'>
+          <div id="headerCalculator"></div>
           <table className='viewCalc'>
             <thead>
               <tr>
@@ -150,5 +151,9 @@ class Calculator extends React.Component  {
     );
   }
 };
+
+
+
+
 
 export default Calculator;

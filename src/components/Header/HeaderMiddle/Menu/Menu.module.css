@@ -1,5 +1,6 @@
-.menu {/* 
-    min-width: 650px; */
+@import '../../../../styles/variables.css';
+
+.menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,7 +10,7 @@
     display: inline-block;
 }
 
-.nav a {
+.nav .xuy {
     text-decoration: none;
     color: #fff;
     font-family: Roboto;
@@ -21,7 +22,7 @@
     transition: all .3s;
 }
 
-.nav a:hover {
+.nav .xuy:hover {
     border-color: #ffffff;
 }
 
@@ -34,7 +35,7 @@
 }
 
 @media (max-width: 1070px) {
-    .nav a {
+    .nav .xuy {
         font-size: 20px;
     }
     .menu {
@@ -43,7 +44,7 @@
 }
 
 @media (max-width: 856px) {
-    .nav a {
+    .nav .xuy {
         font-size: 16px;
     }
     .menu {
@@ -80,7 +81,7 @@
     .nav li+li {
         padding: 0;
     }
-    .nav li a {
+    .nav li .xuy {
         display: block;
         font-size: 22px;
         color: black;
@@ -91,5 +92,36 @@
     }
     .hide {
         display: none;
+    }
+}
+/* testing header menu fixed */
+.header_fixed {
+    padding-left: 320px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 320px;
+    background-color: var(--blue);
+    animation-name: show_header;
+    animation-duration: 1s;
+    z-index: 9999;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    border: 1px solid transparent;
+    padding: 5px 16px;
+    height: 84px;
+}
+
+@keyframes show_header {
+    0% {
+        opacity: 0;
+        top: -70px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
     }
 }

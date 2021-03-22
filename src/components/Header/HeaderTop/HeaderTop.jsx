@@ -6,7 +6,10 @@ const HeaderTop = () => {
   return(
     <div className="blackLine">
       <div className='forText'>
-        <p>Вантажні послуги у м.Івано-Франківськ</p>
+        <div id='#headerTopHer'>
+          <p>Вантажні послуги у м.Івано-Франківськ</p>
+        </div>
+        
       </div>
     </div>
   )

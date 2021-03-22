@@ -6,7 +6,9 @@ const OfficeRelocation = () => {
   return(
     <div className='container' >
       <div className='styleForContainer'>
-        <img src={imgForOR} alt="img" className='heightAndWidth' />
+        <div id='headerOfficeRelocation'>
+          <img src={imgForOR} alt="img" className='heightAndWidth' />
+        </div>
         
         <h4>Переїзд офісу - це завжди терміни, а час - це гроші.</h4> 
         <p>

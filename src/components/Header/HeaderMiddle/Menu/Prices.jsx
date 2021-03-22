@@ -1,13 +1,19 @@
 import React from 'react';
 import '../Menu/styleForPrices.css';
 import { Link } from "react-router-dom";
+import { useHistory } from 'react-router-dom';
+import ScrollIntoView from 'react-scroll-into-view';
+
 
 const Prices = () => {
+  const history = useHistory();
 
   return(
     <div className='container'>
       <div className='forTable'> 
-        <h2>Прайс на послуги вантажників</h2>
+        <div id='headerPrices'>
+          <h2>Прайс на послуги вантажників</h2>
+        </div>
         <table>
           <thead>
             <tr>
@@ -267,7 +273,12 @@ const Prices = () => {
         </tbody>
       </table>
 
-             <h3>щоб порахувати вартість виносу будівельних матеріалів натисніть <Link to='/calculator'>сюди</Link></h3>
+            <h3>щоб порахувати вартість виносу будівельних матеріалів натисніть 
+              <ScrollIntoView onClick={() => history.push('/calculator')} selector='#headerCalculator'>
+                <button >сюди</button>
+              </ScrollIntoView>
+              
+            </h3>
       </div>
     </div>
 

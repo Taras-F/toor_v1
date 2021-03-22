@@ -1,3 +1,6 @@
+@import '../../../../styles/variables.css';
+
+
 .logo {
     width: 320px;
     display: flex;
@@ -52,3 +55,46 @@
         font-size: 24px;
     }
 }
+
+/* testing logo fixed with menu */
+.logo_fixed {
+    width: 320px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--blue);
+    animation-name: show_logo;
+    animation-duration: 1s;
+    z-index: 9999;
+    /* testing delete or save */
+    font-family: Roboto;
+    font-size: 26px;
+    font-weight: bold;
+    
+}
+
+@keyframes show_logo {
+    0% {
+        opacity: 0;
+        top: -70px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.logo_fixImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_fixImg img {
+    width: 120px;
+    height: 85px;
+    margin-top: 5px;
+}
+
+
