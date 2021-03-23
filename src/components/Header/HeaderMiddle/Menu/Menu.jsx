@@ -46,7 +46,7 @@ const Menu = (props) => {
   const handleScroll = () => {
     if(window.pageYOffset > 300) {
       setActive(true);
-    }else if(window.pageYOffset < 300) {
+    }else if(window.pageYOffset < 500) {
       setActive(false);
     }
   };
