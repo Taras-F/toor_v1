@@ -10,7 +10,7 @@ let menus = [
       name: 'Головна',
       link: "/",
       id: 1,
-      selector: '#headerTopHer'
+      selector: '#menuTop'
     },
     {
       name: 'Калькулятор',

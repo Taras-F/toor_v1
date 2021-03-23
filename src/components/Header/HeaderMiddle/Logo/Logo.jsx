@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import style from './Logo.module.css';
 import logoImg from './logo.gif';
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { useEffect } from 'react';
+import ScrollIntoView from 'react-scroll-into-view';
 
 const Logo = (props) => {
   const [logoFix,setLogoFix] = useState(false);
+  const history = useHistory();
 
   useEffect(() => {
     window.addEventListener('scroll',handleScroll);
@@ -22,9 +24,9 @@ const Logo = (props) => {
    /* div for logo fixed with  menu */
       <div className={logoFix ? style.logo_fixed : ''}>
         <div  className = {logoFix ? style.logo_fixImg : style.logo}>
-            <Link to="/" >
+            <ScrollIntoView onclick={() => history.push('/')} selector="#menuTop" >
               <img src = {logoImg} alt = "logo"/>
-            </Link>
+            </ScrollIntoView>
             <span>Мувінг ТУР</span>
         </div>
       </div>
